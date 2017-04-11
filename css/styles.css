@@ -107,6 +107,13 @@ form {
 	margin: auto;
 }
 
+.contact_info_wrap, .newsletter_wrap {
+	background: rgba(225,225,255,0.2);
+	box-shadow: 5px 5px 3px rgba(50,50,50,0.2);
+	border-radius: 5px;
+	margin-bottom: 25px;
+}
+
 fieldset {
 	border: none;
 }
