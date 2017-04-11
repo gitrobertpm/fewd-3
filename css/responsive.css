@@ -1,0 +1,45 @@
+/*************************
+My responsive styles for FEWD - 3
+Robert Manolis
+Milwaukie, OR - 4/10/2017
+*************************/
+
+/********Tablet**********/
+@media screen and (min-width: 768px) {
+	header h1 {
+		padding: 40px 0px;
+	}
+	
+	.description {
+		width: auto;
+	}
+	
+	.fancy_border {
+		margin: 40px auto 20px;
+		max-width: 725px;
+	}
+	
+	legend {
+		font-size: x-large;
+	}
+	
+	.contact_info_wrap label {
+		display: inline-block;
+		width: 20%;
+	}
+	
+	.contact_info_wrap input, .contact_info_wrap  select {
+		display: inline-block;
+		width: 79%;
+		height: 35px;
+	}
+	
+	hr {
+		width: 100%;
+	}
+	
+	.newsletter_wrap legend {
+		margin-bottom: 0px;
+	}
+}
+/*************************/

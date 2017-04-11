@@ -3,23 +3,25 @@
 <head>
   <meta charset="utf-8">
   <title>RPM's Online Registration Form</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link href="https://fonts.googleapis.com/css?family=IM+Fell+English+SC|Roboto:300,700" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/responsive.css">
-  <link href="https://fonts.googleapis.com/css?family=Macondo|Roboto:300,700" rel="stylesheet"> 
+  <link rel="stylesheet" href="css/responsive.css"> 
 </head>
 <body>
 
 	<header>
-		<h1>The Code Review</h1>
+		<div class="main_heading_wrap">
+			<h1>The Code Review</h1>
+		</div>
+		<h2>Signup for our Newsletter</h2>
+		<p class="description">Get the latest on how your code is doing right in your inbox</p>
+		<span class="fancy_border"></span>
 	</header>
 	
 	<main>
-		<h2>Signup for our Newsletter</h2>
-		<p>Get the latest on how your code is doing right in your inbox</p>
-		<span></span>
 		<form action="#" method="post">
-			<fieldset>
+			<fieldset class="contact_info_wrap">
 				<legend>Contact Information</legend>
 				<label for="name">Full Name</label>
 				<input type="name" name="name" id="name" placeholder="required" required>
@@ -38,7 +40,7 @@
 				
 				<label for="state">State</label>
 				<select name="state" id="state">
-					<option value="Choose State" selected hidden disabled>Choose State</option>
+					<option class="select_placeholder" value="Choose State" selected hidden disabled> -- Choose State -- </option>
 					<option value="Oregon">Oregon</option>
 					<option value="Middle Earth">Middle Earth</option>
 					<option value="Mordor">Mordor</option>
@@ -51,47 +53,54 @@
 				<input type="text" name="zip" id="zip">
 				
 			</fieldset>
-				<fieldset>
+			
+			<hr>
+			
+			<fieldset class="newsletter_wrap">
 				<legend>News Letter</legend>
 				
 				<h3>select the newsletters you would like to recieve</h3>
-				<label for="html_news">HTML News</label>
-				<input type="checkbox" name="html_news" id="html_news">
 				
-				<label for="css_news">CSS News</label>
+				<input type="checkbox" name="html_news" id="html_news">
+				<label for="html_news">HTML News</label>
+				
 				<input type="checkbox" name="css_news" id="css_news">
-				cssjs
-				<label for="js_news">JavaScript News</label>
+				<label for="css_news">CSS News</label>
+				
 				<input type="checkbox" name="js_news" id="js_news">
+				<label for="js_news">JavaScript News</label>
 				
 				<h3>Newsletter Format</h3>
-				<label for="html_format">HTML</label>
+				
 				<input type="radio" name="newsletter_format" id="html_format">
+				<label for="html_format">HTML</label>
 				
-				<label for="xml_format">XML</label>
 				<input type="radio" name="newsletter_format" id="xml_format">
+				<label for="xml_format">XML</label>
 				
-				<label for="json_format">JSON</label>
 				<input type="radio" name="newsletter_format" id="json_format">
+				<label for="json_format">JSON</label>
 				
-				<label for="plain_format">Plain Text</label>
+				
 				<input type="radio" name="newsletter_format" id="plain_format">
+				<label for="plain_format">Plain Text</label>
 				
 				<h3>Optional Info</h3>
-				<label for="secrets">Secrets of the Universe</label>
+				
 				<input type="radio" name="optional_info" id="secrets">
+				<label for="secrets">Secrets of the Universe</label>
 				
-				<label for="gossip">Tasty Gossip</label>
 				<input type="radio" name="optional_info" id="gossip">
+				<label for="gossip">Tasty Gossip</label>
 				
-				<label for="skeletons">Closet Skeletons</label>
 				<input type="radio" name="optional_info" id="skeletons">
+				<label for="skeletons">Closet Skeletons</label>
 				
-				<label for="other_topics">Other topics you'd like to hear about</label>
-				<textarea name="other_topics" id="other_topics"></textarea>
+				<label for="other_topics" class="textarea_label">Other topics you'd like to hear about</label>
+				<textarea name="other_topics" id="other_topics" placeholder="Speak Yo' mind!"></textarea>
 			</fieldset>
 			
-			<input type="submit" value="Submit">
+			<input type="submit" value="Submit" class="submit">
 		</form>
 	</main>
 	

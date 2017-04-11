@@ -1,0 +1,224 @@
+/*************************
+My responsive styles for FEWD - 3
+Robert Manolis
+Milwaukie, OR - 4/10/2017
+*************************/
+
+/********FONTS************
+font-family: 'Roboto', sans-serif; - 300, 700
+font-family: 'IM Fell English SC', serif; - 400
+*************************/
+
+/********Resets & General Styling**********/
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	text-align: center;
+}
+
+main {
+	max-width: 768px;
+	padding: 15px;
+	margin: auto;
+	text-align: left;
+}
+
+h1, h2, h3, legend {
+	font-family: 'IM Fell English SC', serif;
+}
+
+ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+p, li, input, select, option, textarea {
+	font-family: 'Roboto', sans-serif; 
+	font-weight: 300;
+}
+
+label {
+	font-family: 'IM Fell English SC', serif;
+	font-weight: 700;
+}
+
+a {
+	font-family: 'Roboto', sans-serif; 
+	font-weight: 700;
+	text-decoration: none;
+	color: rgba(50,50,50, 1);
+	transition: all 0.5s
+}
+
+a:hover {
+	color: rgba(50,50,50, 0.5);
+}
+
+hr {
+	width: 90%;
+	max-width: 1024px;
+	height: 2px;
+	color: rgba(200,200,200,0.5);
+	background-color: rgba(50,50,50,0.7);
+	border: none;
+	margin-bottom: 25px;
+}
+/************************/
+
+
+/********Header**********/
+.main_heading_wrap {
+	background: linear-gradient(to bottom right, dodgerblue, purple, dodgerblue);
+	box-shadow: 0px 3px 3px rgba(50,50,50,0.3);
+}
+
+header h1 {
+	padding: 20px 0px;
+	background: radial-gradient(rgba(45,47,71,0.94), rgba(27,28,57,0.51));
+	margin: 0 auto;
+	color: white;	
+}
+
+.fancy_border {
+	display: block;
+	max-width: 778px;
+	height: 10px;
+	margin: 20px 5px;
+	border-top: thick solid rgba(0,0,0,1.00);
+	border-bottom: medium solid rgba(0,0,0,1.00);
+}
+/************************/
+
+
+/********Form************/
+.description {
+	width: 290px;
+	margin: auto;
+}
+
+form {
+	margin: auto;
+}
+
+fieldset {
+	border: none;
+}
+
+legend {
+	margin-bottom: 20px;
+}
+
+input, select, textarea {
+	background: rgba(235,235,235,0.5);
+	transition: all .5s;
+}
+
+.contact_info_wrap label {
+	display: block;
+	width: 100%;
+}
+
+.contact_info_wrap input, .contact_info_wrap select, textarea {
+	width: 100%;
+	margin-bottom: 15px;
+	border-radius: 3px;
+	border: 2px solid transparent; 
+	box-shadow: 2px 2px 2px rgba(50,50,50,0.1), 1px 1px 1px rgba(50,50,50,0.1) inset, 1px 1px 1px rgba(250,250,250,0.7) inset;
+}
+
+select {
+	-webkit-appearance: none;
+    -moz-appearance: none;
+	color: rgba(50,50,50,0.5);
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	text-align: right;
+  color: rgba(50,50,50,0.3);
+}
+::-moz-placeholder { /* Firefox 19+ */
+	text-align: right;
+  color: rgba(50,50,50,0.3);
+}
+:-ms-input-placeholder { /* IE 10+ */
+	text-align: right;
+  color: rgba(50,50,50,0.3);
+}
+:-moz-placeholder { /* Firefox 18- */
+	text-align: right;
+  color: rgba(50,50,50,0.3);
+}
+
+textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	text-align: left;
+  color: rgba(50,50,50,0.3);
+}
+textarea::-moz-placeholder { /* Firefox 19+ */
+	text-align: left;
+  color: rgba(50,50,50,0.3);
+}
+textarea:-ms-input-placeholder { /* IE 10+ */
+	text-align: left;
+  color: rgba(50,50,50,0.3);
+}
+textarea:-moz-placeholder { /* Firefox 18- */
+	text-align: left;
+  color: rgba(50,50,50,0.3);
+}
+
+.newsletter_wrap h3 {
+	font-weight: lighter;
+}
+
+.newsletter_wrap label, .newsletter_wrap input {
+	display: inline-block;
+	width: 50%;
+}
+
+.newsletter_wrap label {
+	width: 88%;
+}
+
+.newsletter_wrap input {
+	width: 7%;
+}
+
+.textarea_label {
+	font-weight: lighter;
+	margin: 20px auto auto;
+}
+
+input, textarea {
+	padding: 10px;
+}
+
+.submit {
+	width: 100%;
+	color: white;
+	font-size: x-large;
+	font-weight: bold;
+	padding: 15px;
+	background: dodgerblue;
+	box-shadow: 3px 3px 3px rgba(50,50,50,0.3);
+	border-radius: 5px;
+}
+
+input:focus, select:focus, textarea:focus {
+	border-color: dodgerblue;
+	background: rgba(50,50,250,0.3);
+}
+/************************/
+
+
+/********Footer**********/
+footer p {
+	font-style: italic;
+}
+/************************/
